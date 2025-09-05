@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#naming {
+  background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+  background-size: 1400% 100%;
+  animation: rainbow 8s linear infinite;
+  border-radius: 20px;
+  padding: 23px 65px;
+  border: none;
+  cursor: pointer;
+  transition: 100ms;
+  font-family: "Epunda Slab", serif;
+  font-size: 24px;
+}
+
+#naming:hover {
+  margin-top: 3px;
+  padding: 19px 55px;
+  transition: 100ms;
+}
+
+.top-header {
+  width: 100%;
+  background-color: grey;
+  display: grid;
+  place-items: center;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.plate {
+  position: fixed;
+  top: 50%;
+  left: -400px;  /* start fully off-screen */
+  transform: translateY(-50%); /* vertically center */
+
+  width: 300px;
+  height: 200px;
+  background: white;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+  display: grid;
+  place-items: center;
+
+  transition: left 0.5s ease; /* smooth animation */
+}
+
+.plate.active {
+  left: 50%;
+  transform: translate(-50%, -50%); /* center horizontally & vertically */
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
