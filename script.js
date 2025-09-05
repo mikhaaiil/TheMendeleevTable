@@ -1,13 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const plate = document.getElementById("plate");
-  const openBtn = document.getElementById("naming");
+  const modal = document.getElementById("modal");
   const closeBtn = document.getElementById("closeBtn");
 
-  openBtn.addEventListener("click", () => {
-    plate.classList.add("active"); // slide in
+  const modalSymbol = document.getElementById("modal-symbol");
+  const modalName = document.getElementById("modal-name");
+  const modalNumber = document.getElementById("modal-number");
+  const modalMass = document.getElementById("modal-mass");
+  const modalPeriod = document.getElementById("modal-period");
+  const modalGroup = document.getElementById("modal-group");
+  const modalSubgroup = document.getElementById("modal-subgroup");
+
+  function openModal(el) {
+    modalSymbol.textContent = el.dataset.symbol;
+    modalName.textContent = el.dataset.name;
+    modalNumber.textContent = el.dataset.number;
+    modalMass.textContent = el.dataset.mass;
+    modalPeriod.textContent = el.dataset.period;
+    modalGroup.textContent = el.dataset.group;
+    modalSubgroup.textContent = el.dataset.subgroup;
+
+    modal.classList.add("show");
+  }
+
+  function closeModal() {
+    modal.classList.remove("show");
+  }
+
+  document.querySelectorAll(".element").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
   });
 
-  closeBtn.addEventListener("click", () => {
-    plate.classList.remove("active"); // slide out
+  closeBtn.addEventListener("click", closeModal);
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
   });
 });
