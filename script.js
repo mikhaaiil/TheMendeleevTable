@@ -30,6 +30,42 @@ document.addEventListener("DOMContentLoaded", () => {
     el.addEventListener("click", () => openModal(el));
   });
 
+  document.querySelectorAll(".element-green").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-red").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-orange").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-l-blue").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-yellow").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-purple").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-pink").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-blue").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
+  document.querySelectorAll(".element-d-green").forEach(el => {
+    el.addEventListener("click", () => openModal(el));
+  });
+
   closeBtn.addEventListener("click", closeModal);
 
   window.addEventListener("click", (e) => {

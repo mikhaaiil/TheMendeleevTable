@@ -20,8 +20,8 @@ h1 {
 }
 
 .element {
-  background: #4CAF50;
-  color: white;
+  background: grey;
+  color: black;
   font-weight: bold;
   border-radius: 8px;
   display: flex;
@@ -32,7 +32,160 @@ h1 {
 }
 
 .element:hover {
+  background: gray;
+  transform: scale(1.1);
+}
+
+.element-green {
+  background: #4CAF50;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-green:hover {
   background: #45a049;
+  transform: scale(1.1);
+}
+
+.element-red {
+  background: red;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-red:hover {
+  background: red;
+  transform: scale(1.1);
+}
+
+.element-orange {
+  background: orange;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-orange:hover {
+  background: orange;
+  transform: scale(1.1);
+}
+
+.element-l-blue {
+  background: lightskyblue;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-l-blue:hover {
+  background: lightskyblue;
+  transform: scale(1.1);
+}
+
+.element-yellow {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-yellow:hover {
+  background: yellow;
+  transform: scale(1.1);
+}
+
+.element-purple {
+  background: purple;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-purple:hover {
+  background: purple;
+  transform: scale(1.1);
+}
+
+.element-pink {
+  background: hotpink;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-pink:hover {
+  background: hotpink;
+  transform: scale(1.1);
+}
+
+.element-blue {
+  background: dodgerblue;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-blue:hover {
+  background: dodgerblue;
+  transform: scale(1.1);
+}
+
+.element-d-green {
+  background: lightseagreen;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s, transform 0.3s;
+}
+
+.element-d-green:hover {
+  background: lightseagreen;
   transform: scale(1.1);
 }
 
